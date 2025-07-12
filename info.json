@@ -1,0 +1,15 @@
+{
+  "name": "Leandro",
+  "surname": "Eraso",
+  "email": "leaeraso@gmail.com",
+  "phone": "+54 9 261 390 4416",
+  "address": "Los Tamarindos",
+  "address_number": "1697",
+  "city": "Godoy Cruz",
+  "province": "Mendoza",
+  "country": "Argentina",
+  "zip": "5500",
+  "birthday": "2000-09-01",
+  "gender": "male",
+  "cuit": "20-43137848-2"
+}
