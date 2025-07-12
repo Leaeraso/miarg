@@ -47,12 +47,12 @@ export default function DniDigital() {
                       className="rounded"
                       priority
                     />
-                    <p className="absolute top-[107px] left-[156px] text-xs font-medium text-black/90 bg-white/75 px-1 rounded">
+                    {/* <p className="absolute top-[107px] left-[156px] text-xs font-medium text-black/90 bg-white/75 px-1 rounded">
                       2000
                     </p>
                     <p className="absolute bottom-[9px] left-[2px] text-sm font-bold text-black/80 bg-white/80 px-1 rounded">
                       43.137.848
-                    </p>
+                    </p> */}
                   </div>
                   {/* Dorso */}
                   <div className="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
@@ -102,7 +102,7 @@ export default function DniDigital() {
               />
             </button>
             {openSection && (
-              <div className="bg-white border border-gray-200 rounded-lg mt-6 max-w-[75%] mx-auto shadow-lg overflow-hidden transition-all">
+              <div className="bg-white border border-gray-200 rounded-lg my-6 max-w-[75%] mx-auto shadow-lg overflow-hidden transition-all">
                 <img src="/qr-code.jpg" alt="QR Code" />
               </div>
             )}
