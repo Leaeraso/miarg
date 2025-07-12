@@ -47,10 +47,10 @@ export default function DniDigital() {
                       className="rounded"
                       priority
                     />
-                    <p className="absolute top-[107px] left-[156px] text-xs font-medium text-black/90 bg-white/70 px-1 rounded">
+                    <p className="absolute top-[107px] left-[156px] text-xs font-medium text-black/90 bg-white/75 px-1 rounded">
                       2000
                     </p>
-                    <p className="absolute bottom-[9px] left-[2px] text-sm font-bold text-black/80 bg-white/70 px-1 rounded">
+                    <p className="absolute bottom-[9px] left-[2px] text-sm font-bold text-black/80 bg-white/80 px-1 rounded">
                       43.137.848
                     </p>
                   </div>
