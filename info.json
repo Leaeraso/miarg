@@ -1,4 +1,14 @@
 {
   "name": "Leandro",
-  "surname": "Eraso"
+  "surname": "Eraso",
+  "dni": "43137848",
+  "number_of_process": "00514401304",
+  "date_of_issue": "14/09/2017",
+  "date_of_expiration": "14/09/2032",
+  "sex": "M",
+  "date_of_birth": "2000/09/01",
+  "nationality": "AR",
+  "place_of_birth": "ARGENTINA",
+  "address": "Los Tamarindos 1697 B° Jardin Trapiche, Gobernador Benegas, 5501",
+  "cuil": "20-43137848-3"
 }
