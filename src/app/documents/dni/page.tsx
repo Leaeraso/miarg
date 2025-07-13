@@ -6,10 +6,12 @@ import { useSwipeable } from 'react-swipeable'
 import { NavBar } from '../../components/nav-bar'
 import info from '../../../../info.json'
 import { ChevronDown, Eye, QrCode, X } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 export default function DniDigital() {
   const [isFlipped, setIsFlipped] = useState(false)
   const [openSection, setOpenSection] = useState<boolean>(false)
+  const router = useRouter()
 
   const toggleSection = () => {
     setOpenSection(!openSection)
@@ -74,13 +76,19 @@ export default function DniDigital() {
           </p>
           <div className="flex flex-col border-t border-gray-300 mt-4">
             <div className="flex flex-row">
-              <button className="flex flex-row items-center gap-2 justify-center flex-1 p-2 border-r border-gray-300">
+              <button
+                className="flex flex-row items-center gap-2 justify-center flex-1 p-2 border-r border-gray-300"
+                onClick={() => router.push('/documents/dni/more')}
+              >
                 <Eye className="text-[#362fc1]" />
                 <p className="text-xs text-[#333333] text-center">
                   Ver detalle
                 </p>
               </button>
-              <button className="flex flex-row items-center gap-2 justify-center flex-1 p-2">
+              <button
+                className="flex flex-row items-center gap-2 justify-center flex-1 p-2"
+                onClick={() => router.push('/documents/dni/desactivate')}
+              >
                 <X className="text-[#362fc1]" />
                 <p className="text-xs text-[#333333] text-center">
                   Desactivar DNI

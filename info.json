@@ -1,4 +1,14 @@
 {
   "name": "Anuar",
-  "surname": "Gomez Handam"
+  "surname": "Gomez Handam",
+  "dni": "42720505",
+  "cuil": "20-42720505-3",
+  "number_of_process": "00695516826",
+  "date_of_issue": "17/10/2022",
+  "date_of_expiration": "17/10/2037",
+  "sex": "M",
+  "date_of_birth": "2000/04/23",
+  "nationality": "AR",
+  "place_of_birth": "ARGENTINA",
+  "address": "FRANCISCO ALVAREZ 1729 DORREGO GUAYMALLEN,5501"
 }
