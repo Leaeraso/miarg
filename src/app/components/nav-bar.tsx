@@ -103,7 +103,7 @@ export function NavBar() {
   const router = useRouter()
 
   const toggleUserMenu = () => setIsUserMenuOpen((prev) => !prev)
-  const closeUserMenu = () => setIsUserMenuOpen(false)
+  // const closeUserMenu = () => setIsUserMenuOpen(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
