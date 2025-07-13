@@ -1,6 +1,6 @@
 import { Actions } from './components/actions'
 import { Holidays } from './components/holidays'
-import { NavBar } from '../../public/nav-bar'
+import { NavBar } from './components/nav-bar'
 import { ProfileProgress } from './components/profile-progress'
 import { Welcome } from './components/welcome'
 

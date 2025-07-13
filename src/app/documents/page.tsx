@@ -2,8 +2,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { ChevronDown, CircleAlert } from 'lucide-react'
 import { useState } from 'react'
-import { NavBar } from '../../../public/nav-bar'
 import { useRouter } from 'next/navigation'
+import { NavBar } from '../components/nav-bar'
+import { DriverLicenseIcon } from '../components/icons/driver-license'
 
 export default function Documents() {
   const [openSection, setOpenSection] = useState<string | null>(null)
@@ -17,7 +18,6 @@ export default function Documents() {
     <>
       <main className="min-h-screen bg-[#f0f0f0]">
         <NavBar />
-
         <section className="flex flex-col px-4">
           {/* DNI */}
           <div className="bg-white border border-gray-200 rounded-lg mt-6 max-w-md mx-4 shadow-lg overflow-hidden transition-all">
@@ -82,11 +82,7 @@ export default function Documents() {
               className="w-full p-4 flex flex-row gap-x-2 items-center"
             >
               <div className="border-r border-gray-300 pr-4 flex items-center justify-center">
-                <img
-                  src="/credencial_licencia_conducir.svg"
-                  alt="Licencia"
-                  className="w-12 h-12"
-                />
+                <DriverLicenseIcon className="w-12 h-12" />
               </div>
               <h4 className="text-lg font-bold text-[#333333] ml-2 flex-1 text-left">
                 Licencia Nacional de Conducir

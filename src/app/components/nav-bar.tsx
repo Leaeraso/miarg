@@ -1,80 +1,96 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import { AlignJustify, ChevronDown, CircleUserRound } from 'lucide-react'
+import {
+  AlignJustify,
+  ChevronDown,
+  CircleUserRound,
+  PhoneIcon,
+} from 'lucide-react'
 import { useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
+import { DocumentsIcon } from '@/app/components/icons/documents'
+import { ChargesIcon } from '@/app/components/icons/charges'
+import { HomeIcon } from '@/app/components/icons/home'
+import { VehicleIcon } from '@/app/components/icons/vehicle'
+import { WorkIcon } from '@/app/components/icons/work'
+import { HealthIcon } from '@/app/components/icons/health'
+import { ProcessIcon } from '@/app/components/icons/process'
+import { ShiftIcon } from '@/app/components/icons/shift'
+import { ChildrenIcon } from '@/app/components/icons/children'
+import { NewsIcon } from '@/app/components/icons/news'
+import { TinaIcon } from '@/app/components/icons/tina'
 
 const menuItems = [
   {
     id: 1,
     title: 'Inicio',
-    icon: '/icono-home.svg',
+    icon: HomeIcon,
     link: '/',
   },
   {
     id: 2,
     title: 'Documentos',
-    icon: '/icono-documentos.svg',
+    icon: DocumentsIcon,
     link: '/documents',
   },
   {
     id: 3,
     title: 'Vehiculos',
-    icon: '/icono-vehiculos.svg',
+    icon: VehicleIcon,
     link: '/vehicles',
   },
   {
     id: 4,
     title: 'Trabajo',
-    icon: '/icono-trabajo.svg',
+    icon: WorkIcon,
     link: '/work',
   },
   {
     id: 5,
     title: 'Salud',
-    icon: '/icono-salud.svg',
+    icon: HealthIcon,
     link: '/health',
   },
   {
     id: 6,
     title: 'Cobros',
-    icon: '/icono-cobros.svg',
+    icon: ChargesIcon,
     link: '/payments',
   },
   {
     id: 7,
     title: 'Tramites',
-    icon: '/icono-tramites.svg',
+    icon: ProcessIcon,
     link: '/processes',
   },
   {
     id: 8,
     title: 'Turnos',
-    icon: '/turno_empty.svg',
+    icon: ShiftIcon,
     link: '/shifts',
   },
   {
     id: 9,
     title: 'Hijos',
-    icon: '/icono-hijos.svg',
+    icon: ChildrenIcon,
     link: '/children',
   },
   {
     id: 10,
     title: 'Novedades',
-    icon: '/icono-novedades.svg',
+    icon: NewsIcon,
     link: '/news',
   },
   {
     id: 11,
     title: 'Telefonos',
-    icon: '/icono-emergencias.svg',
+    icon: PhoneIcon,
     link: '/phones',
   },
   {
     id: 12,
     title: 'Tina',
-    icon: '/icono-tina.svg',
+    icon: TinaIcon,
     link: '/tina',
   },
 ]
@@ -125,6 +141,7 @@ export function NavBar() {
           <div className="p-4 py-8">
             {menuItems.map((item) => {
               const isActive = pathName === item.link
+              const Icon = item.icon
 
               return (
                 <button
@@ -137,13 +154,12 @@ export function NavBar() {
                  }`}
                   onClick={() => router.push(item.link)}
                 >
-                  <img
-                    src={item.icon}
-                    alt={item.title}
+                  <Icon
                     className={`w-6 h-6 ${
-                      isActive ? 'color-[#362fc1]' : 'color-white'
+                      isActive ? 'stroke-white' : 'stroke-[#362fc1]'
                     }`}
                   />
+
                   <span
                     className={`font-bold ${
                       isActive ? 'text-white' : 'text-[#333333]'

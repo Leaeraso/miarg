@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import { NavBar } from '../../../../public/nav-bar'
+import { NavBar } from '../../components/nav-bar'
 import info from '../../../../info.json'
 import { ChevronDown, Eye, QrCode, X } from 'lucide-react'
 
